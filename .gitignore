@@ -46,9 +46,9 @@ venv.bak/
 # Docker
 *.log
 docker-compose.override.yml
-docker-compose.*.yml  # якщо створюєте кілька оверрайд-файлів
+docker-compose.*.yml
 
-/migrations/versions/*.py   # або просто /migrations/
+/migrations/versions/*.py
 
 /static/
 /media/
@@ -72,3 +72,9 @@ ehthumbs.db
 
 celerybeat-schedule
 celerybeat.pid
+
+*.sqlite3
+staticfiles
+*celerybeat
+*celerybeat-schedule-shm
+*celerybeat-schedule-wal
