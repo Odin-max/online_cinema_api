@@ -7,74 +7,61 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+.Python
 build/
+develop-eggs/
 dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
 *.egg-info/
+.installed.cfg
+*.egg
 pip-wheel-metadata/
-__pypackages__/
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-.pytest_cache/
-nosetests.xml
-coverage.xml
-*,cover
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# dotenv environment variables
-.env
 
 # Virtual environments
 venv/
-env/
-.venv/
 ENV/
+env/
 env.bak/
 venv.bak/
 
-# Docker
+# dotenv environment variables file
+.env
+.env.*.local
+
+# Django stuff:
 *.log
-docker-compose.override.yml
-docker-compose.*.yml
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
 
-/migrations/versions/*.py
+# Ignore all migration scripts (but keep __init__.py so Django бачить пакети)
+**/migrations/*.py
+!**/migrations/__init__.py
+**/migrations/*.pyc
 
-/static/
-/media/
+# Pytest cache
+.pytest_cache/
 
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# VS Code
 .vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-*.code-workspace
 
-.vscode/
-.vs/
-
-Thumbs.db
-ehthumbs.db
-
-.mypy_cache/
-.dmypy.json
-
-.pyre/
-
-celerybeat-schedule
-celerybeat.pid
-
-*.sqlite3
-staticfiles
-*celerybeat
-*celerybeat-schedule-shm
-*celerybeat-schedule-wal
